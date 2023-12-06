@@ -2,6 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const generateMarkdown = require("./utils/generateMarkdown")
+
 // an array of questions for user input
 const questions = [
   {
@@ -54,35 +56,10 @@ function init() {
   inquirer.prompt(questions).then((answers) => {
 
     // Generate README content based on user input
-    const readmeContent = `
-# ${answers.title}
-
-## Description
-${answers.description}
-
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Questions](#questions)
-
-## Installation
-${answers.installation}
-
-## Usage
-${answers.usage}
-
-## License
-This application is covered under the ${answers.license} license.
-
-## Questions
-For additional questions, you can reach me through:
-- GitHub: [${answers.githubUsername}](https://github.com/${answers.githubUsername})
-- Email: ${answers.email}
-`;
+    const readmeContent = generateMarkdown(answers);
 
 //     // Write the README file
-    writeToFile('./output/sample.md', readmeContent);
+    writeToFile('./README.md', readmeContent);
   });
 }
 
