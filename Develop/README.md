@@ -1,8 +1,9 @@
 
-  # das
+  # README Generator
+  ![license](https://img.shields.io/badge/LICENSE-GPL-blue)
   
   ## Description
-  131
+  This will generate a readme
   
   ## Table of Contents
   - [Installation](#installation)
@@ -11,16 +12,19 @@
   - [Questions](#questions)
   
   ## Installation
-  sdgdfg
+  run npm i
   
   ## Usage
-  qe
+  run node index.js
+  
   
   ## License
-  This application is covered under the MIT license.
+  This application is covered under the GPL license.
+  Link: 
+  
   
   ## Questions
   For additional questions, you can reach me through:
-  - GitHub: [sgerg](https://github.com/sgerg)
-  - Email: tjyt
+  - GitHub: [john123](https://github.com/john123)
+  - Email: john123@mail.com
   
