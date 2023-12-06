@@ -13,15 +13,15 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
  
   if(license == "MIT") {
-    return "link"
+    return "https://opensource.org/license/mit-0/"
   }
 
   else if(license == "GPL") {
-    return "link"
+    return "https://opensource.org/license/gpl-2-0/"
   }
 
   else if(license == "Apache") {
-    return "link"
+    return "http://www.apache.org/licenses/LICENSE-2.0"
   }
 
   else {
