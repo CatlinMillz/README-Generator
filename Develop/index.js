@@ -52,6 +52,7 @@ function writeToFile(fileName, data) {
 // function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
+
     // Generate README content based on user input
     const readmeContent = `
 # ${answers.title}
@@ -80,8 +81,8 @@ For additional questions, you can reach me through:
 - Email: ${answers.email}
 `;
 
-    // Write the README file
-    writeToFile('README.md', readmeContent);
+//     // Write the README file
+    writeToFile('./output/sample.md', readmeContent);
   });
 }
 
